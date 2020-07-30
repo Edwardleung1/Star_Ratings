@@ -13,10 +13,21 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>4K Television Ratings</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container mt-5">
+      <div class="form-group">
+        <select id="product-select" class="form-control custom-select">
+          <option value="0" disabled selected>Select Product</option>
+          <option value="sony">Sony 4K TV</option>
+          <option value="samsung">Samsung 4K TV</option>
+          <option value="vizio">Vizio 4K TV</option>
+          <option value="panasonic">Panasonic 4K TV</option>
+          <option value="phillips">Phillips 4K TV</option>
+        </select>
+      </div>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -73,5 +84,7 @@
         </tbody>
       </table>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
